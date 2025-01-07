@@ -1,0 +1,190 @@
+/* General Styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f8f8f8;
+}
+
+header .nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2C2C2C;
+  padding: 20px;
+}
+
+.nav-bar .logo img {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.nav-bar .menu a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.nav-bar .sign-up {
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Support Section */
+.support-section1 {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.support-section1 h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.support-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensure proper wrapping for smaller screens */
+}
+
+.support-text {
+  background-color: #354F7E;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 300px; /* Ensure proper size on smaller screens */
+  text-align: left; /* Align text to the left for better readability */
+}
+
+.support-text h3 {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.support-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.support-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 300px; /* Ensure proper size on smaller screens */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.support-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.support-form label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.support-form input,
+.support-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.support-form button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.support-form button:hover {
+  background-color: #555;
+}
+
+.support-logo {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.support-logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+  .support-container {
+    gap: 15px;
+  }
+
+  .support-text h3 {
+    font-size: 1.3rem;
+  }
+
+  .support-text p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .support-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .support-text,
+  .support-form {
+    width: 100%;
+    max-width: 500px; /* Limit the width for smaller screens */
+    margin: 0 auto;
+  }
+
+  .support-logo img {
+    margin-top: 20px;
+  }
+
+  .support-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .support-form form input,
+  .support-form form textarea {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .support-section1 h2 {
+    font-size: 1.8rem;
+  }
+
+  .support-text {
+    padding: 20px;
+  }
+
+  .support-form {
+    padding: 20px;
+  }
+
+  .support-form button {
+    font-size: 0.9rem;
+  }
+}
