@@ -30,20 +30,12 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Header */
-.nav-bar {
+header .nav-bar {
   display: flex;
-  justify-content: space-between; /* Spread logo and menu */
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding: 20px 30px;
-  position: absolute; /* Positioned on top of the banner */
-  top: 0;
-  left: 0;
   background-color: #2C2C2C;
-  z-index: 10;
-  box-sizing: border-box;
-  height: 80px;
+  padding: 20px;
 }
 
 .nav-bar .logo img {
@@ -52,78 +44,17 @@ a:hover {
   border-radius: 50%;
 }
 
-.nav-bar .menu {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
 .nav-bar .menu a {
-  color: #ffffff;
-  font-size: 1rem;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.nav-bar .menu a:hover {
-  background-color: #444444;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
 }
 
 .nav-bar .sign-up {
   background-color: transparent;
-  color: #ffffff;
-  padding: 5px 15px;
-  border: 2px solid #ffffff;
-  border-radius: 20px;
-  font-weight: bold;
-  transition: color 0.3s, background-color 0.3s;
-}
-
-.nav-bar .sign-up:hover {
-  color: #000000;
-  background-color: #ffffff;
-}
-
-/* Mobile Navigation */
-.nav-bar .menu-toggle {
-  display: none;
-  font-size: 1.5rem;
-  color: white;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .nav-bar {
-    flex-direction: column;
-    height: auto;
-    padding: 15px;
-  }
-
-  .nav-bar .menu-toggle {
-    display: block;
-    align-self: flex-end;
-    margin-bottom: 10px;
-  }
-
-  .nav-bar .menu {
-    flex-direction: column;
-    display: none; /* Initially hidden */
-    gap: 10px;
-    width: 100%;
-  }
-
-  .nav-bar .menu.show {
-    display: flex; /* Show menu when toggled */
-  }
-
-  .nav-bar .menu a {
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-  }
+  border: 2px solid #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 /* Meet The Team */
@@ -192,7 +123,7 @@ a:hover {
 .mission-logo img {
   width: 100px;
   border-radius: 10px;
-  
+
 }
 
 /* Our Origins */
